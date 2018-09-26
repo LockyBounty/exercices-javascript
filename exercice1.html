@@ -29,8 +29,10 @@ console.log(`Vous serez ${x} et habiterez à ${y}, et marié à ${z} avec ${n} e
     
     
     </script-->
+
 <!--Exercice 1.c-->
- <script>
+
+ <!--script>
     
     const age= 31;
     const y= 100;
@@ -45,6 +47,27 @@ console.log(`Vous serez ${x} et habiterez à ${y}, et marié à ${z} avec ${n} e
     
     console.log(`Il vous reste ${n} de ${x} avant d'ateindre l'age de ${y} ans`);
 
+    
+    
+    </script-->
+
+<!--Exercice 1.d Priorité de calcul-->
+
+ <script>
+    
+    const a= 1;
+    const b= 2;
+    const c= 3;
+    const d= 4;
+    const e= 2;
+    
+    console.log(`Résolution de (1+2) * 3 + 4 / 2 en détails :`);
+
+
+    console.log(`Etape 1 : ${a+b} * ${c} + ${d} / ${e}  `);
+    console.log(`Etape 2 : ${(a+b) *c} + ${d} / ${e}`);
+    console.log(`Etape 3 : ${(a+b) *c} + ${d/e}`);
+    console.log(`Etape 4 : ${((a+b) *c) + (d/e)}`);
     
     
     </script>
