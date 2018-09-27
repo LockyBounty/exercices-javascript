@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Parcours javascript</title>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+
+    <!--Exercice 3.a Functions- soustraction>
+    <script>
+        const a = prompt(`Entrez valeur a :`); //fait entrer la valeur en string de l'user//
+        const b = prompt(`Entrez valeur b :`);
+        let x = parseInt(a);//convertit le string en integer//
+        let z = parseInt(b);
+
+        const soustractionOp = (x, z) => {
+            let c = x - z;
+            //return document.write(`Résultat de la soustraction : ${c} `);//Affiche en html//
+            return alert(`Résultat de la soustraction : ${c} `);//Affiche dans une box//
+        }
+        soustractionOp(a,b);
+        
+    </script-->
+ <!--Exercice 3.b Functions- division >
+     <script>
+            const a = prompt(`Entrez valeur 'a' à diviser :`); //fait entrer la valeur en string de l'user//
+            const b = prompt(`Entrez valeur b :`);
+            let x = parseFloat(a);//convertit le string en integer//
+            let z = parseFloat(b);
+    
+            const divisionOp = (x, z) => {
+                let c = x / z;
+                //return document.write(`Résultat de la division : ${c} `);//Affiche en html//
+                return alert(`Résultat de la division : ${c} `);//Affiche dans une box//
+            }
+            divisionOp(a,b);
+            
+        </script-->
+<!--Exercice 3.c Functions- multiplication >
+     <script>
+            const a = prompt(`Entrez valeur 'a' à multiplier :`); //fait entrer la valeur en string de l'user//
+            const b = prompt(`Entrez valeur b :`);
+            let x = parseFloat(a);//convertit le string en integer//
+            let z = parseFloat(b);
+    
+            const multiplicationOp = (x, z) => {
+                let c = x * z;
+                //return document.write(`Résultat de la multiplication : ${c} `);//Affiche en html//
+                return alert(`Résultat de la multiplication : ${c} `);//Affiche dans une box//
+            }
+            multiplicationOp(a,b);
+            
+        </script-->
+ <!--Exercice 3.d Functions- pourcentage >
+     <script>
+            const a = prompt(`Entrez valeur 'a' dont vous voulez trouver le pourcentage :`); //fait entrer la valeur en string de l'user//
+            const b = prompt(`Entrez valeur 'b' qui est le pourcentage :`);
+            let x = parseFloat(a);//convertit le string en integer//
+            let z = parseFloat(b);
+    
+            const pourcentOp = (x, z) => {
+                let c = (x * z)/100;
+                //return document.write(`${b} % de ${a} vaut : ${c} `);//Affiche en html//
+                return alert(`${b} % de ${a} vaut : ${c} `);//Affiche dans une box//
+            }
+            pourcentOp(a,b);
+            
+        </script-->
+
+ <!--Exercice 3.e Functions- vitesse en km/h -
+Formule pour le calcul de vitesse moyenne
+Si tu veux calculer manuellement une vitesse, la formule est la suivante : vitesse = distance / temps
+Pour avoir une vitesse en kilomètre/heure, il faut diviser la distance en km par le temps en heure.
+Pour calculer une vitesse en mètre/seconde, la distance en mètres est divisée par le temps en secondes.
+Si tu veux convertir une vitesse en m/s en km/h, il suffit de multiplier
+la vitesse en m/s par 3,6 car 1 heure = 3600 secondes et 1 kilomètre = 1000 mètres.
+Exemple de calcul manuel : 10km en 40min, distance = 10000m, temps = 40×60 = 2400 secondes |
+vitesse = 10000/2400 x 3,6 = 15 km/h.-->
+     <script>
+            const a = prompt(`Entrez valeur 'a' qui est la distance en km :`); //fait entrer la valeur en string de l'user//
+            const b = prompt(`Entrez valeur 'b' qui est le temps passé en minutes :`);
+            let x = parseFloat(a);//convertit le string en integer//
+            let z = parseFloat(b);
+    
+            const vitesseOp = (x, z) => {
+                let c =  (x*1000)/(z * 60);
+                c = c*(3.6);
+                //return document.write(`${b} % de ${a} vaut : ${c} `);//Affiche en html//
+                return alert(`La vitesse moyenne est de ${c}km/h `);//Affiche dans une box//
+            }
+            vitesseOp(a,b);
+            
+        </script>
+
+</body>
+
+</html>
