@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 
 <head>
@@ -43,13 +43,15 @@
 
     <!--Exercice 4.d Boucles- Iteration pyramide-->
     <script>
-        
-        for (let i = 1; i <= 5; i++) {
+        const taillePyramide = prompt(`Combien d'etages voulez-vous à votre pyramide ?`)
+        let a = parseInt(taillePyramide);
+
+        for (let i = 0; i < a; i++) {
             
-                for (let e = 1; e <= i; e++) {
-                    console.log(`*`);
-                }
-                console.log(` `);
+                for (let e = 0; e <= i; e++) {
+                    document.write(`* `);
+            }
+            document.write(`<br/>`);
             }
         
     </script>

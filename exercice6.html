@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Parcours javascript</title>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+
+<!--Exercice 6.a Math - Prendre la plus petite valeur / puis la plus grande / puis les additionner>
+    <script>
+        let minus = Math.min(7,5,-12,6,32,18,14,-2);
+        let giant = Math.max(-3,9,21,36,27,54,17,35);
+        
+        document.write(`${minus}<br/>`);
+        document.write(`${giant}<br/>`);
+
+        document.write(`${giant} + ${minus} = ${giant+minus}<br/>`);
+    </script-->
+    
+<!--Exercice 6.b Math - Aléatoire 1>
+    <script>
+        let floatBateau = 10.4;
+        let couleBateau = Math.floor(floatBateau);
+        let voleBateau = Math.ceil(floatBateau);
+        
+        document.write(`Si valeur à ${couleBateau}, il coule !<br/>`);
+        document.write(`Si valeur à ${voleBateau}, il vole !<br/>`);
+    </script-->
+    
+<!--Exercice 6.c Math - Aléatoire 2>
+
+// On renvoie un nombre aléatoire entre une valeur min (incluse) 
+// et une valeur max (exclue)
+Math.random() * (max - min) + min;//>
+
+    <script>
+        let a = Math.floor(Math.random()* (100 - 50) +50);
+        let b = Math.floor(Math.random()*2);
+        let c = Math.floor(Math.random()*11);
+        
+        document.write(`valeur à ${a} !<br/>`);
+        document.write(`valeur à ${b} !<br/>`);
+        document.write(`valeur à ${c} !<br/>`);
+    </script-->
+    
+<!--Exercice 6.b Math - Aléatoire 3-->
+    <script>
+        let array = ["Goro", "Johnny Cage", "Kano", "Liu Kang", "Raiden", "Reptile", "Scorpion", "Shang Tsun", "Sonya", "Sub-Zero"];
+        let a = array.length;
+        let b = Math.floor(Math.random()* a );
+        
+        document.write(`Vous avez choisi ${array[b]} ! "index du tableau : ${b}"<br/>`);
+        
+    </script>
+
+</body>
+
+</html>
