@@ -36,7 +36,7 @@
         
     </script-->
 
-    <!--Exercice 7.b Objet- Shop a / b / c-->
+<!--Exercice 7.b Objet- Shop a / b / c>
     <script>
         let string1="";
         let armeDispo="";
@@ -95,9 +95,33 @@
             } 
         lvl10min();
 
-        
 
-     </script>
+
+     </script-->
+
+<!--Exercice 7.c Objet - mainCharacter-->
+    <script>
+                        
+            let mainCharacter = {
+                name: "Thor",
+                level: 10,
+                life: 500,
+                attack : function (){
+                    document.write(`${this.name} attaque avec ${this.weapon.name} et inflige ${(this.level)*this.weapon.damage} points de dégats`);
+                },
+                weapon : {
+                    name: "Mjölnir",
+                    damage: 150
+                }, //Objet dans un objet /weapon dans mainCharacter//
+            };
+           
+            mainCharacter.attack();
+    
+ 
+    
+            
+    
+         </script>
 
 </body>
 </html>
