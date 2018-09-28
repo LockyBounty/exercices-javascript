@@ -1,0 +1,89 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Parcours javascript</title>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+
+    <!--Exercice 7.a Objet- character>
+    <script>
+        //let objet1 = {}; // creation d'objet //
+        let string1="";
+        let main_color = "#FF0000";
+
+        let character = { 
+            
+            name : "Thor",
+            age : 8000,
+            itemToGive : ["Mjolnir", "Thunder gauntlet", "Light ring", "Golden crown"],
+            
+            giveItem : function(){
+                
+                let randomItem = Math.floor(Math.random()*this.itemToGive.length);
+                document.write(`PNJ gave ${this.name} the item : ${this.itemToGive[randomItem]}`);
+            }
+        };
+        
+        /*for (let property1 in character){
+            string1 = string1 + "<br/> " + character[property1];
+        }*/
+        
+        //document.write(`${character.name}`);//
+        character.giveItem();
+        
+    </script-->
+
+    <!--Exercice 7.b Objet- Shop -->
+    <script>
+        let string1="";
+        
+        let epee = {
+            title: "Masamune",
+            physic: 120,
+            magic: 50,
+            minLevel: 10, //Pour le debloquer//
+            available: true
+        };
+        let hache = {
+            title: "Tomahawk",
+            physic: 90,
+            magic: 25,
+            minLevel: 5, //Pour le debloquer//
+            available: true
+        };
+        let sceptre = {
+
+            title: "Dragul",
+            physic: 20,
+            magic: 150,
+            minLevel: 12, //Pour le debloquer//
+            available: false
+        };
+        let shop = [epee, hache, sceptre];
+
+        //Afficher tous les objets//
+        let display1 = () => {
+        for (let key1 in shop){
+            string1 = string1 + "<br/> " + shop[key1].title;}
+            document.write(`${string1}`);
+            };
+        display1();
+        //Afficher tous les objets disponibles//
+        let available1 = () => {
+            for (let key2 in epee){
+            if(key2===available && key2=== true){
+                document.write(`${key2.name}`);
+            }
+            
+        }
+        }
+
+        available1();
+
+     </script>
+
+</body>
+</html>
