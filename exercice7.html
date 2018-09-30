@@ -36,7 +36,7 @@
         
     </script-->
 
-<!--Exercice 7.b Objet- Shop a / b / c>
+    <!--Exercice 7.b Objet- Shop a / b / c>
     <script>
         let string1="";
         let armeDispo="";
@@ -99,7 +99,7 @@
 
      </script-->
 
-<!--Exercice 7.c Objet - mainCharacter-->
+    <!--Exercice 7.c Objet - mainCharacter>
     <script>
                         
             let mainCharacter = {
@@ -115,13 +115,67 @@
                 }, //Objet dans un objet /weapon dans mainCharacter//
             };
            
-            mainCharacter.attack();
+            mainCharacter.attack();    
     
- 
-    
-            
-    
-         </script>
+         </script-->
+    <!--Exercice 7 Bonus -->
+    <script>
+        let mainCharacter = {
+            name: "Thor",
+            level: 10,
+            life: 2500,
+            weapon: {
+                name: "Mjölnir",
+                damage: 150
+            }, //Objet dans un objet /weapon dans mainCharacter//
+
+            attack: function(opponent) {
+                document.write(`${this.name} attaque ${opponent.name} avec ${this.weapon.name} et inflige ${(this.level)*this.weapon.damage} points de dégats<br/>`);
+                return (this.level) * this.weapon.damage;
+            },
+            receiveDamage: function(damage) {
+                this.life -= damage;
+                if (this.life <= 0) {
+                    document.write(`${this.name} a été vaincu !<br/>`);
+                } else {
+
+                    document.write(`Il reste ${this.life} points de vie à ${this.name}<br/>`);
+                }
+            }
+        };
+        let opponentCharacter = {
+            name: "Loki",
+            level: 12,
+            life: 3100,
+            weapon: {
+                name: "Fenrir",
+                damage: 170
+            }, //Objet dans un objet /weapon dans mainCharacter//
+
+            attack: function(opponent) {
+                document.write(`${this.name} attaque ${opponent.name} avec ${this.weapon.name} et inflige ${(this.level)*this.weapon.damage} points de dégats<br/>`);
+                return (this.level) * this.weapon.damage;
+            },
+
+            receiveDamage: function(damage) {
+                this.life -= damage;
+                if (this.life <= 0) {
+                    document.write(`${this.name} a été vaincu !<br/>`);
+                } else {
+
+                    document.write(`Il reste ${this.life} points de vie à ${this.name}<br/>`);
+                }
+            }
+        };
+
+
+        opponentCharacter.receiveDamage(mainCharacter.attack(opponentCharacter));
+        opponentCharacter.receiveDamage(mainCharacter.attack(opponentCharacter));
+        mainCharacter.receiveDamage(opponentCharacter.attack(mainCharacter));
+        mainCharacter.receiveDamage(opponentCharacter.attack(mainCharacter));
+        
+    </script>
 
 </body>
+
 </html>
